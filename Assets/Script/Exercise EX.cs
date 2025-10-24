@@ -2,21 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Exercise1 : MonoBehaviour
+// Utilizzando il ciclo for, stampare la tabellina del 5
+
+public class ExerciseEX : MonoBehaviour
 {
-    [SerializeField] int index;
-    [SerializeField] int num;
+    [SerializeField] int numb;
 
     // Start is called before the first frame update
     void Start()
     {
-        while(index > 0)
+        for (int i = 1; i <= 10; i++)
         {
-            num++;
-            Debug.Log(num);
-            index--;
+            Debug.Log(numb * i);
         }
-        Debug.Log("done");
     }
 
     // Update is called once per frame
