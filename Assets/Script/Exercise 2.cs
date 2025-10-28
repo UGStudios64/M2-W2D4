@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Exercise2 : MonoBehaviour
+
 {
-    // Start is called before the first frame update
+    [SerializeField] int[] numeri;
+    int somma;
+    int multi = 1;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        for(int i = 0;  i < numeri.Length; i++)
+        {
+            somma += numeri[i];
+            multi *= numeri[i];
+        }
+        Debug.Log($"la somma é {somma}");
+        Debug.Log($"Il loro prodotto é {multi}");
+    } 
 }

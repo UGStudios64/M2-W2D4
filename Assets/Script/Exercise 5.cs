@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Exercise5 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] int numberToFind;
+    [SerializeField] int arraySize;
+    [SerializeField] int numberOffset;
+
     void Start()
     {
-        
-    }
+        int max = numberToFind + numberOffset;
+        int min = numberToFind - numberOffset;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        int[] array = new int[arraySize];
+
+        for (int i = 0; i < arraySize; i++)
+        {
+            array[i] = Random.Range(min, max);
+            if (array[i] == numberToFind)
+            {
+                Debug.Log("Found");
+            }
+            Debug.Log("Not Found");
+        }
+        Debug.Log("Finish Iteration");
     }
 }

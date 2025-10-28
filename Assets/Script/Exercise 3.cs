@@ -6,7 +6,6 @@ public class Exercise3 : MonoBehaviour
 {
     [SerializeField] int value = 30;
 
-    // Start is called before the first frame update
     void Start()
     {
         for (int i = 1; i <= value; i++)
@@ -28,11 +27,5 @@ public class Exercise3 : MonoBehaviour
                 Debug.Log(i);
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

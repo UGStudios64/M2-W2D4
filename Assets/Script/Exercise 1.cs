@@ -7,10 +7,9 @@ public class Exercise1 : MonoBehaviour
     [SerializeField] int index;
     [SerializeField] int num;
 
-    // Start is called before the first frame update
     void Start()
     {
-        while(index > 0)
+        while (index > 0)
         {
             num++;
             Debug.Log(num);
@@ -19,9 +18,4 @@ public class Exercise1 : MonoBehaviour
         Debug.Log("done");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
